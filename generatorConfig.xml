@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <context id="context1">
+    <jdbcConnection connectionURL="jdbc:mysql://192.168.1.113:3306/SCompras" driverClass="com.mysql.jdbc.Driver" password="" userId="root" />
+    
+    <javaModelGenerator targetPackage="cl.valpoSystems.bpmTraking.orm.model" targetProject="bpmTraking" />
+    <sqlMapGenerator targetPackage="cl.valpoSystems.bpmTraking.orm.map" targetProject="bpmTraking" />
+    <javaClientGenerator targetPackage="cl.valpoSystems.bpmTraking.orm.client" targetProject="bpmTraking" type="XMLMAPPER" />
+
+    <table schema="SCompras" tableName="bpm_instancia_historica" domainObjectName="BpmInstanciaHistorica" />
+    
+<!--     <table schema="public" tableName="audittaskimpl"> -->
+<!--       <columnOverride column="???" property="???" /> -->
+<!--     </table> -->
+    
+  </context>
+</generatorConfiguration>
